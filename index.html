@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Movie Tickets</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Jquery JS -->
+    <script src="js/jquery-2.2.4.js" type="text/javascript"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/scripts.js" type="text/javascript"></script>
+
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Movie Tickets</h1>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Add a contact:</h2>
+          <form id="user-movie">
+            <div class="form-group">
+              <label for="new-movie">Movie</label>
+              <select id="new-movie">
+              <option value="The Nice Guys">The Nice Guys</option>
+              <option value="Keanu">Keanu</option>
+              <option value="Hail, Caesar!">Hail, Caesar!</option>
+              <option value="Eye In The Sky">Eye In The Sky</option>
+              <option value="Green Room">Green Room</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="new-time">Time</label>
+              <select id="new-time">
+              <option value="1">1:00pm</option>
+              <option value="2">2:00pm</option>
+              <option value="4">4:00pm</option>
+              <option value="7">7:00pm</option>
+              <option value="9">9:00pm</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="new-age">Age</label>
+              <input type="number" class="form-control" required id="new-age">
+            </div>
+
+            <button type="submit" class="btn">Check price</button>
+          </form>
+          <h2>Movies:</h2>
+          <ul id="movies">
+
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <div id="show-movies">
+            <h2></h2>
+            <p>Price: <span class="new-price"></span></p>
+            <p>Age: <span class="new-age"></span></p>
+            <p>Time: <span class="new-time"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
